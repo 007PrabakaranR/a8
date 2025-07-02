@@ -1,0 +1,25 @@
+query GetUser {
+  getUser {
+    fname
+    age
+    id
+    hobby
+    isMarried
+  }
+}
+
+mutation AddUser(
+  $fname: String!
+  $age: Int!
+  $isMarried: Boolean!
+  $hobby: [String]!
+) {
+  addUser(
+    data: { fname: $fname, age: $age, isMarried: $isMarried, hobby: $hobby }
+  ) {
+    fname
+    age
+    isMarried
+    hobby
+  }
+}

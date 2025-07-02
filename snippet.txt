@@ -1,0 +1,15 @@
+//for codegen code:
+
+npm install --save-dev @graphql-codegen/cli @graphql-codegen/typescript @graphql-codegen/typescript-resolvers
+npm install @graphql-codegen/typescript-react-apollo
+npm install @graphql-codegen/cli
+npm install --save-dev @parcel/watcher
+
+
+
+
+"codegen": "graphql-codegen --config codegen.yml  --watch"
+
+
+npm run codegen
+npx graphql-codegen
